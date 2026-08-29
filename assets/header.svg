@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="220" viewBox="0 0 1200 220" role="img" aria-label="Hi, I'm cooolinho - Backend Developer, PHP, Symfony, Laravel">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#1e1b4b"/>
+      <stop offset="55%" stop-color="#4c1d95"/>
+      <stop offset="100%" stop-color="#7c3aed"/>
+    </linearGradient>
+    <linearGradient id="glow" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#a78bfa" stop-opacity="0.35"/>
+      <stop offset="100%" stop-color="#38bdf8" stop-opacity="0.15"/>
+    </linearGradient>
+    <clipPath id="frame">
+      <rect x="0" y="0" width="1200" height="220" rx="10"/>
+    </clipPath>
+  </defs>
+
+  <g clip-path="url(#frame)">
+    <rect x="0" y="0" width="1200" height="220" fill="url(#bg)"/>
+
+    <!-- dezente Lichtpunkte -->
+    <circle cx="1040" cy="48" r="120" fill="url(#glow)"/>
+    <circle cx="170" cy="30" r="80" fill="#c4b5fd" opacity="0.08"/>
+    <circle cx="960" cy="150" r="46" fill="#38bdf8" opacity="0.10"/>
+
+    <!-- Wellen am unteren Rand -->
+    <path d="M0,158 C150,130 300,190 450,164 C600,138 750,194 900,168 C1050,142 1150,174 1200,164 L1200,220 L0,220 Z"
+          fill="#ffffff" opacity="0.09"/>
+    <path d="M0,180 C150,156 300,206 450,183 C600,160 750,206 900,186 C1050,166 1150,192 1200,183 L1200,220 L0,220 Z"
+          fill="#ffffff" opacity="0.14"/>
+
+    <text x="600" y="98" text-anchor="middle"
+          font-family="'Segoe UI',Ubuntu,'Helvetica Neue',Helvetica,Arial,sans-serif"
+          font-size="48" font-weight="700" fill="#ffffff">Hi, I&#39;m cooolinho</text>
+
+    <text x="600" y="134" text-anchor="middle"
+          font-family="'Segoe UI',Ubuntu,'Helvetica Neue',Helvetica,Arial,sans-serif"
+          font-size="19" font-weight="500" fill="#ddd6fe" letter-spacing="1.2">Backend Developer &#183; PHP &#183; Symfony &#183; Laravel</text>
+  </g>
+</svg>

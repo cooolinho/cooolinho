@@ -1,13 +1,14 @@
 <div align="center">
 
-<img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=6,11,20&height=200&section=header&text=Hi%2C%20I'm%20cooolinho&fontSize=48&fontColor=ffffff&fontAlignY=35&desc=Backend%20Developer%20%C2%B7%20PHP%20%C2%B7%20Symfony%20%C2%B7%20Laravel&descAlignY=55&descSize=18" alt="header" />
+<img src="assets/header.svg" alt="Hi, I'm cooolinho — Backend Developer · PHP · Symfony · Laravel" width="100%" />
 
-<!-- Optionale Alternative zum Banner: eigenes Foto/Avatar
-<img src="https://github.com/cooolinho.png" width="150" height="150" style="border-radius:50%" alt="avatar" />
+<!-- Alternative zum Banner: eigener Avatar
+<img src="https://github.com/cooolinho.png" width="150" height="150" alt="avatar" />
 -->
 
-<a href="https://github.com/cooolinho?tab=followers"><img src="https://img.shields.io/github/followers/cooolinho?label=Followers&style=for-the-badge&color=6f42c1" alt="followers" /></a>
-<img src="https://komarev.com/ghpvc/?username=cooolinho&style=for-the-badge&color=6f42c1&label=Profile+Views" alt="profile views" />
+<a href="https://github.com/cooolinho?tab=followers"><img src="https://img.shields.io/github/followers/cooolinho?label=Followers&style=for-the-badge&color=6f42c1&labelColor=1e1b4b" alt="Followers" /></a>
+<a href="https://github.com/cooolinho?tab=repositories"><img src="https://img.shields.io/github/stars/cooolinho?label=Stars&style=for-the-badge&color=6f42c1&labelColor=1e1b4b" alt="Stars" /></a>
+<img src="https://komarev.com/ghpvc/?username=cooolinho&style=for-the-badge&color=6f42c1&label=Profile+Views" alt="Profile views" />
 
 </div>
 
@@ -55,14 +56,49 @@
 
 ## 📊 GitHub stats
 
+<!--
+  Diese Karten werden von .github/workflows/profile-summary-cards.yml taeglich
+  erzeugt und in dieses Repo committet. Kein externer Runtime-Dienst.
+-->
+
 <div align="center">
 
-<img height="165" src="https://github-readme-stats.vercel.app/api?username=cooolinho&show_icons=true&include_all_commits=true&count_private=true&hide_border=true&theme=tokyonight" alt="GitHub stats" />
-<img height="165" src="https://github-readme-stats.vercel.app/api/top-langs/?username=cooolinho&layout=compact&langs_count=8&hide_border=true&theme=tokyonight" alt="Top languages" />
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="profile-summary-card-output/github_dark/0-profile-details.svg" />
+  <img src="profile-summary-card-output/github/0-profile-details.svg" alt="Profile details" width="100%" />
+</picture>
 
-<img src="https://github-readme-activity-graph.vercel.app/graph?username=cooolinho&theme=tokyo-night&hide_border=true&area=true" alt="Contribution graph" />
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="profile-summary-card-output/github_dark/3-stats.svg" />
+  <img src="profile-summary-card-output/github/3-stats.svg" alt="GitHub stats" height="200" />
+</picture>
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="profile-summary-card-output/github_dark/1-repos-per-language.svg" />
+  <img src="profile-summary-card-output/github/1-repos-per-language.svg" alt="Repos per language" height="200" />
+</picture>
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="profile-summary-card-output/github_dark/2-most-commit-language.svg" />
+  <img src="profile-summary-card-output/github/2-most-commit-language.svg" alt="Most commit language" height="200" />
+</picture>
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="profile-summary-card-output/github_dark/4-productive-time.svg" />
+  <img src="profile-summary-card-output/github/4-productive-time.svg" alt="Productive time" height="200" />
+</picture>
 
-<img src="https://github-profile-trophy.vercel.app/?username=cooolinho&theme=tokyonight&no-frame=true&no-bg=true&column=7&margin-w=8" alt="Trophies" />
+</div>
+
+---
+
+## 🐍 Contribution activity
+
+<!-- Erzeugt von .github/workflows/snake.yml, liegt im Branch "output". -->
+
+<div align="center">
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/cooolinho/cooolinho/output/github-snake-dark.svg" />
+  <img src="https://raw.githubusercontent.com/cooolinho/cooolinho/output/github-snake.svg" alt="Contribution snake animation" width="100%" />
+</picture>
 
 </div>
 
@@ -89,10 +125,6 @@
 <a href="https://www.linkedin.com/in/"><img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn" /></a>
 <a href="mailto:"><img src="https://img.shields.io/badge/E--Mail-EA4335?style=for-the-badge&logo=gmail&logoColor=white" alt="E-Mail" /></a>
 
-</div>
-
-<div align="center">
-
-<img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=6,11,20&height=120&section=footer" alt="footer" />
+<img src="assets/footer.svg" alt="" width="100%" />
 
 </div>
