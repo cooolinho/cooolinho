@@ -1,0 +1,45 @@
+name: Selected projects
+
+on:
+  schedule:
+    # Taeglich 05:07 UTC -- nach dem Auto-Push der Summary Cards (04:17).
+    - cron: "7 5 * * *"
+  # Eine geaenderte Variable SELECTED_PROJECTS startet keinen Lauf,
+  # danach also einmal manuell "Run workflow" ausloesen.
+  workflow_dispatch:
+
+concurrency:
+  group: selected-projects
+  cancel-in-progress: false
+
+jobs:
+  update:
+    name: Update selected projects table
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Render table from GitHub API
+        env:
+          # Fine-grained PAT, nur ausgewaehlte Repos, Permission "Metadata: Read-only".
+          GH_TOKEN: ${{ secrets.PROJECTS_GITHUB_TOKEN }}
+          # Actions-Variable, z.B. "laravel-filament-template,cooolinho.de"
+          SELECTED_PROJECTS: ${{ vars.SELECTED_PROJECTS }}
+        run: python3 .github/scripts/update_selected_projects.py
+
+      - name: Commit and push if changed
+        run: |
+          if git diff --quiet -- README.md; then
+            echo "README unchanged, nothing to commit."
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add README.md
+          git commit -m "Update selected projects"
+          # Der Summary-Cards-Workflow pusht ebenfalls auf main.
+          git pull --rebase
+          git push

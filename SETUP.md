@@ -27,19 +27,35 @@ Deshalb in dieser Reihenfolge vorgehen:
    New repository secret, Name **`SUMMARY_GITHUB_TOKEN`**, Wert = das Token.
    Der eingebaute `GITHUB_TOKEN` reicht hier nicht — er kommt nicht an die
    repo-übergreifenden Contribution-Daten.
-3. **Push** (siehe oben).
-4. **Beide Workflows einmal manuell starten**: Repo → Actions → „Profile summary cards"
-   bzw. „Contribution snake" → *Run workflow*.
-5. Profil öffnen und prüfen, dass keine kaputten Bild-Icons mehr da sind.
+3. **Fine-grained PAT für die Projektliste anlegen**: GitHub → Settings →
+   Developer settings → *Fine-grained tokens* → Generate new token.
+   - Resource owner: `cooolinho`
+   - Repository access: *Only select repositories* → die Repos wählen, die
+     unter „Selected projects" erscheinen sollen
+   - Permissions: nur **Metadata: Read-only**
+   - Ablaufdatum setzen und dir notieren (danach muss der Token erneuert werden)
+4. **Als Secret hinterlegen**: Repo → Settings → Secrets and variables → Actions →
+   New repository secret, Name **`PROJECTS_GITHUB_TOKEN`**, Wert = der Fine-grained Token.
+5. **Variable mit der Projektliste anlegen**: Repo → Settings → Secrets and
+   variables → Actions → Tab *Variables* → New repository variable,
+   Name **`SELECTED_PROJECTS`**, Wert z. B.
+   `laravel-filament-template,tsv-squad-planner,cooolinho/symfony-security-bundle`
+   (Komma- oder zeilengetrennt, `repo` oder `owner/repo`, Reihenfolge = Tabellenreihenfolge).
+6. **Push** (siehe oben).
+7. **Alle drei Workflows einmal manuell starten**: Repo → Actions → „Profile summary cards",
+   „Contribution snake" bzw. „Selected projects" → *Run workflow*.
+8. Profil öffnen und prüfen, dass keine kaputten Bild-Icons mehr da sind und die
+   Projekttabelle befüllt ist.
 
-## Die beiden Workflows
+## Die drei Workflows
 
 | Datei | Erzeugt | Landet in |
 | --- | --- | --- |
 | `.github/workflows/profile-summary-cards.yml` | Profil-Details, Stats, Sprachen, Productive Time | `profile-summary-card-output/<theme>/` auf `main` |
 | `.github/workflows/snake.yml` | Contribution-Snake (hell + dunkel) | Branch `output` |
+| `.github/workflows/selected-projects.yml` | Tabelle „Selected projects" (Beschreibung, Sprache, Stars, Forks, letzter Push) aus der GitHub-API | Abschnitt zwischen den `SELECTED-PROJECTS`-Markern in `README.md` auf `main` |
 
-Beide laufen täglich per Cron und lassen sich jederzeit per *Run workflow* auslösen.
+Alle drei laufen täglich per Cron und lassen sich jederzeit per *Run workflow* auslösen.
 
 ### Warum keine `*.vercel.app`-Dienste mehr
 
