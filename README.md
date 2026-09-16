@@ -115,10 +115,7 @@
 | Project | What it is | Language | ⭐ Stars | 🍴 Forks | Last push |
 | --- | --- | --- | --- | --- | --- |
 | [laravel-filament-template](https://github.com/cooolinho/laravel-filament-template) | Dockerized Laravel 13 + Filament 5 starter template with MySQL, Redis and Mailpit<br><sub>`docker` `filament` `laravel` `php` `template`</sub> | PHP | 0 | 0 | 2026-09-10 |
-| [cooolinho.de](https://github.com/cooolinho/cooolinho.de) | Personal portfolio site with a terminal-styled UI, live GitHub stats, and automated Vite/SFTP deployment<br><sub>`github-actions` `portfolio` `sass` `terminal-ui` `vite`</sub> | JavaScript | 0 | 0 | 2026-09-16 |
-| [tsv-squad-planner](https://github.com/cooolinho/tsv-squad-planner) | — | PHP | 0 | 0 | 2021-07-31 |
-| [symfony-security-bundle](https://github.com/cooolinho/symfony-security-bundle) | — | PHP | 1 | 0 | 2022-10-26 |
-| [symfony-file-importer-bundle](https://github.com/cooolinho/symfony-file-importer-bundle) | — | PHP | 0 | 0 | 2021-07-29 |
+| [discord-bot-v2](https://github.com/cooolinho/discord-bot-v2) | — | PHP | 0 | 0 | 2026-06-07 |
 <!-- SELECTED-PROJECTS:END -->
 
 ---
