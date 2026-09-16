@@ -128,8 +128,9 @@
 
 <a href="https://github.com/cooolinho"><img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white" alt="GitHub" /></a>
 <!-- Passe die folgenden Links an oder entferne sie -->
-<a href="https://www.linkedin.com/in/"><img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn" /></a>
-<a href="mailto:"><img src="https://img.shields.io/badge/E--Mail-EA4335?style=for-the-badge&logo=gmail&logoColor=white" alt="E-Mail" /></a>
+<a href="https://xing.com/profile/Colin_Deepe/portfolio"><img src="https://img.shields.io/badge/Xing-0A66C2?style=for-the-badge&logo=xing&logoColor=white" alt="Xing" /></a>
+<a href="mailto:coding@cooolinho.de"><img src="https://img.shields.io/badge/E--Mail-EA4335?style=for-the-badge&logo=gmail&logoColor=white" alt="E-Mail" /></a>
+<a href="https://cooolinho.de"><img src="https://img.shields.io/badge/cooolinho.de-083d1b?style=for-the-badge" alt="cooolinho.de" /></a>
 
 <img src="assets/footer.svg" alt="" width="100%" />
 
