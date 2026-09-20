@@ -114,8 +114,8 @@
 <!-- SELECTED-PROJECTS:START -->
 | Project | What it is | Language | ⭐ Stars | 🍴 Forks | Last push |
 | --- | --- | --- | --- | --- | --- |
-| [household-hq](https://github.com/cooolinho/household-hq) | A self-hosted, multi-tenant portal for managing personal finances, insurances, contracts, energy consumption, documents and household inventory - built with Laravel and Filament. | PHP | 0 | 0 | 2026-09-20 |
-| [filament-mailbox](https://github.com/cooolinho/filament-mailbox) | IMAP, Microsoft 365 and Gmail mailbox integration for Filament v5 — sync, read, search and reply to e-mails inside your admin panel. | PHP | 0 | 0 | 2026-09-20 |
+| [household-hq](https://github.com/cooolinho/household-hq) | A self-hosted, multi-tenant portal for managing personal finances, insurances, contracts, energy consumption, documents and household inventory - built with Laravel and Filament. | PHP | 2 | 0 | 2026-09-20 |
+| [filament-mailbox](https://github.com/cooolinho/filament-mailbox) | IMAP, Microsoft 365 and Gmail mailbox integration for Filament v5 — sync, read, search and reply to e-mails inside your admin panel. | PHP | 2 | 0 | 2026-09-20 |
 | [laravel-filament-template](https://github.com/cooolinho/laravel-filament-template) | Dockerized Laravel 13 + Filament 5 starter template with MySQL, Redis and Mailpit<br><sub>`docker` `filament` `laravel` `php` `template`</sub> | PHP | 0 | 0 | 2026-09-10 |
 | [discord-bot-v2](https://github.com/cooolinho/discord-bot-v2) | A self-hosted Discord bot with a Laravel + Filament admin panel. The bot captures every Discord WebSocket event and stores it for further processing via Laravel queue jobs. | PHP | 0 | 0 | 2026-06-07 |
 | [python-timelapse-creator](https://github.com/cooolinho/python-timelapse-creator) | CLI tool that turns a folder of photos into a timelapse video (MP4/AVI/MKV) using OpenCV<br><sub>`cli` `opencv` `python` `timelapse` `video`</sub> | Python | 0 | 0 | 2026-09-08 |
